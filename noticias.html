@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Noticias</title>
+        <link rel="stylesheet" type="text/css" href="noticias.css">
+    </head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perfil-fanatico.html">Perfil</a></li>
+                <li><a href="jugador.html">Jugador Favorito</a></li>
+                <li><a href="equipo.html">Equipo Favorito</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li> 
+                <li><a href="partidos.html">Partidos</a></li> 
+                <li><a href="tienda-fanatico.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="partidos.html">Próximos Partidos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="posiciones.html">Tabla de Posiciones de Equipos</a></li>
+            <li><a href="goleadores.html">Goleadores</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Noticias</h1>
+    <article>
+        <img  class="i1" src="imagen5.webp" alt="">
+        <h2>Mauricio Larriera reveló el futuro de Christian Cueva en Alianza Lima</h2>
+        <p>El técnico de Alianza Lima, el uruguayo Mauricio Larriera, se pronunció sobre la situación del siempre polémico Christian Cueva, quien recientemente anunció que se encuentra lesionado de consideración.</p>
+        <div class="resumen">
+            <button class="ver-mas" onclick="mostrarContenidoCompleto(this)">Ver Más</button>
+            <div class="contenido-completo">
+            <p>El estratega victoriano reconoció que el volante lleva buen tiempo con la dolencia, por tanto, esta no es ninguna sorpresa para él, por el contrario, han venido trabajando para no empeorarla.</p>
+
+            <p>"Es una molestia que tiene, que la conozco y estamos tratando de ayudarlo para que esté disponible. Él ha trabajado y hemos trabajado para que esté de la mejor manera posible", comentó Mauricio Larriera a los medios de prensa.</p>
+                
+            <p>En ese sentido, el uruguayo no descarta que el volante esté presente en la definición de la Liga 1. "Christian Cueva ha estado disponible. En la medida que eso sea así, por razones técnicas, voy a ver si lo convoco o no, 
+               si inicia o si va al banco, tal y como está ocurriendo hasta hoy", apuntó.</p>
+                
+            <p>"Lo que ocurra de aquí en adelante no me corresponde a mí decirlo, es una decisión muy personal del futbolista y es un futbolista de mucho prestigio y al que yo trato de cuidar", continuó Mauricio Larriera.</p>
+                
+            <p>Respecto a los otros lesionados de Alianza Lima, el entrenador charrúa reconoció que no todos estarán recuperados para una eventual final. "Tratamos de que Sabbag cumpla con todos los pasos para volver. 
+               Es probable que vuelva a una convocatoria y eso lo pone muy contento. En el caso de Zambrano y Zanelatto, vamos a esperar que se recuperen bien. 
+               Si es que hay una final, no sería conveniente arriesgarlos", señaló.</p>
+                
+            <p>Por otro lado, Mauricio Larriera aclaró que, antes de pensar en una final, está concentrado en la fecha final del Torneo Clausura. 
+               "El domingo no sé qué va a pasar, puede haber semifinales también, lo único que sé es que en caso de que haya final, Alianza está ahí, pero no voy a entregar este partido porque tenemos que ganarlo".</p>
+                <button class="ver-menos" onclick="ocultarContenidoCompleto(this)">Ver Menos</button>
+            </div>
+        </div>
+    </article>
+    <article>
+        <p></p>
+        <img  class="i1" src="imagen6.webp" alt="">
+        <h2>Carlos Zambrano hace importante aclaración a sus seguidores</h2>
+        <p>El defensa Carlos Zambrano, se olvidó por un momento de los temas futbolísticos y de Alianza Lima, para hacer una importante aclaración. El 'Kaiser' quiere prevenir a sus seguidores de ser engañados.</p>
+        <div class="resumen">
+            <button class="ver-mas" onclick="mostrarContenidoCompleto(this)">Ver Más</button>
+            <div class="contenido-completo">
+            <p>"Él es Joel Atoche, el 'chueco'. Fue mi amigo de infancia durante años. Hoy me entero que usa mi nombre para aprovecharse de personas incautas y sacar un provecho económico, por lo cual quiero aclarar unos puntos", manifestó el defensor en su cuenta oficial de Instagram.</p>
+
+            <p> Al respecto, Carlos Zambrano hizo una serie de aclaraciones. "Mi único vínculo con él era amical. Nunca tuvimos nada que involucre dinero o algo de valor. Nunca fue mi empresario", señaló.</p>                
+            <p>"Nunca lo autoricé para que, a mi nombre, cierre algún trato que involucre dinero o algo de valor. Siempre que me tomé una foto con él fue por la amistad y cuando me pidió un saludo para alguien, se lo di sin pedir nada a cambio", continuó el defensor aliancista.</p>
+                
+            <p>El objetivo de Carlos Zambrano es no verse involucrado en problemas por acciones de terceros. "Habiendo aclarado esto, no me hago responsable de ninguno de los negocios o tratos que haya hecho esta persona y les pido que, si en algún momento, vuelve a tomar mi nombre, no se dejen engañar", apuntó</p>
+                
+            <p>De esta manera, el defensa espera meterse de lleno en la recta final de la Liga 1, donde Alianza Lima busca hacerse del título que lo consagre como tricampeón de nuestro balompié. Los íntimos cerrarán su participación en el Torneo Clausura ante Deportivo Garcilaso en la ciudad del Cusco.</p>
+                <button class="ver-menos" onclick="ocultarContenidoCompleto(this)">Ver Menos</button>
+            </div>
+        </div>
+    </article>
+
+    <script>
+         function mostrarContenidoCompleto(btn) {
+            btn.style.display = "none";
+            btn.parentElement.querySelector(".contenido-completo").style.display = "block";
+        }
+
+        function ocultarContenidoCompleto(btn) {
+            btn.style.display = "none";
+            btn.parentElement.parentElement.querySelector(".ver-mas").style.display = "block";
+            btn.parentElement.style.display = "none";
+        }
+    </script>
+<script src="noticias.js"></script>
+</body>
+</html>
+

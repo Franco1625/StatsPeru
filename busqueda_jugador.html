@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Búsqueda de Jugadores de Fútbol</title>
+    <link rel="stylesheet" type="text/css" href="busqueda_jugador.css">
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perfil-fanatico.html">Perfil</a></li>
+                <li><a href="jugador.html">Jugador Favorito</a></li>
+                <li><a href="equipo.html">Equipo Favorito</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li> 
+                <li><a href="partidos.html">Partidos</a></li> 
+                <li><a href="tienda-fanatico.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Búsqueda de Jugadores de Fútbol</h1>
+
+    <form id="searchForm">
+        <label for="searchInput">Buscar Jugador:</label>
+        <input type="text" id="searchInput" name="searchInput" placeholder="Nombre del jugador">
+        <button type="button" onclick="buscarJugador()">Buscar</button>
+    </form>
+
+    <div id="resultado">
+        
+    </div>
+
+    <script>
+        function buscarJugador() {
+            const searchTerm = document.getElementById('searchInput').value;
+            const resultadoDiv = document.getElementById('resultado');
+
+          
+            const jugador = {
+                nombre: 'José Paolo Guerrero Gonzáles',
+                apodo: 'Pistolero - Depredador - Capitán',
+                nacimiento: 'Chorrillos, Lima, Perú - 1 de enero de 1984',
+                equipo: 'LDU Quito',
+                edad: 39,
+                altura: '1,85 m',
+                peso: '82 kg',
+                imagen: 'imagen4.jpg'
+        
+            };
+
+            // Mostrar la información del jugador
+            const mensajeResultado = `Resultados de búsqueda para "${searchTerm}":
+            <div class="jugador-info">
+              <img src="${jugador.imagen}" alt="${jugador.nombre}">
+              <p>Nombre: ${jugador.nombre}</p>
+              <p>Apodo: ${jugador.apodo}</p>
+              <p>Fecha de Nacimiento: ${jugador.nacimiento}</p>
+              <p>Equipo: ${jugador.equipo}</p>
+              <p>Edad: ${jugador.edad} años</p>
+              <p>Altura: ${jugador.altura}</p>
+              <p>Peso: ${jugador.peso}</p>
+            </div>`;
+
+
+            resultadoDiv.innerHTML = mensajeResultado;
+        }
+    </script>
+</body>
+</html>

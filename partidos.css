@@ -1,0 +1,113 @@
+*{
+    font-family: sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #f10909;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo para los botones de "Mostrar Alineaciones" y "Ocultar Alineaciones */
+button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilo para el contenedor de alineaciones */
+#alineaciones-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: none; /* Oculta el contenedor de alineaciones por defecto */
+}
+
+/* Estilo para las listas de alineaciones */
+#alineaciones-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#alineaciones-container ul li {
+    margin: 4px 0;
+}
+
+/* Estilo para los títulos de las alineaciones */
+#alineaciones-container h3 {
+    color: #333;
+}
+.cuadro-partido {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}

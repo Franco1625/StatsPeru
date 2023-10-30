@@ -1,0 +1,178 @@
+*{
+    font-family: sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #f10909;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los formularios */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+   
+    display: block;
+    margin: 0 auto; /* Configura los márgenes izquierdo y derecho para centrar horizontalmente */
+    max-width: 40%;
+    height: auto;
+    
+    
+}
+
+.logo {
+    position: fixed; /* Establece la posición fija */
+    top: 10px; /* Distancia desde la parte superior */
+    left: 10px; /* Distancia desde la derecha */
+    width: 115px;
+}
+
+
+.inicio{
+    position: fixed; /* Establece la posición fija */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    
+}
+
+.carrito{
+    position: fixed; /* Establece la posición fija */
+    top: 70px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+}
+
+.usuario{
+    position: fixed; /* Establece la posición fija */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 220px; /* Distancia desde la derecha */
+    width: 40px
+}
+
+.carro{
+    position: fixed; /* Establece la posición fija */
+    top: 60px; /* Distancia desde la parte superior */
+    right: 180px; /* Distancia desde la derecha */
+    width: 40px
+}
+
+
+.i1{
+    max-width: 400px;
+}
+
+.i2{
+    max-width: 400px;
+}
+
+.i3{
+    max-width: 400px;
+}
+
+
+
+    #perfil {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #perfil h2 {
+        color: #333;
+    }
+
+    #perfil p {
+        color: #555;
+    }
+
+    #perfil a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    #perfil a:hover {
+        text-decoration: underline;
+    }
+
+
+img{
+    max-width: 400px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="estadisticas.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #quienes-somos {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio-micro.html">Inicio</a></li>
+                <li><a href="perfil-micro.html">Perfil</a></li>
+                <li><a href="estadisticas.html">Estadisticas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <div id="estadisticas">
+            <h2>Estadisticas - Cantidad de vistas - Producto 1</h2>
+            <canvas id="grafico"></canvas>
+        </div>          
+        
+    </section>
+    
+    <script>
+        // Datos de ejemplo para el gráfico
+        var data = {
+            labels: ['OCTUBRE 2023', 'NOVIEMBRE 2023', 'DICIEMBRE 2023', 'ENERO 2024', 'FEBRERO 2024'],
+            datasets: [
+                {
+                    label: 'VISTAS',
+                    data: [1200, 1900, 3000, 5000, 2500],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        // Configuración del gráfico
+        var options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Crear el gráfico
+        var ctx = document.getElementById('grafico').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>       
+
+
+<section>
+
+    <div id="estadisticas">
+        <h2>Estadisticas - Cantidad de vistas - Producto 2</h2>
+        <canvas id="grafico1"></canvas>
+    </div>          
+    
+</section>
+
+<script>
+    // Datos de ejemplo para el gráfico
+    var data = {
+        labels: ['OCTUBRE 2023', 'NOVIEMBRE 2023', 'DICIEMBRE 2023', 'ENERO 2024', 'FEBRERO 2024'],
+        datasets: [
+            {
+                label: 'VISTAS',
+                data: [2500, 1700, 3850, 1600, 500],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }
+        ]
+    };
+
+    // Configuración del gráfico
+    var options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+
+    // Crear el gráfico
+    var ctx = document.getElementById('grafico1').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+</script>     
+
+<section>
+
+    <div id="estadisticas">
+        <h2>Estadisticas - Cantidad de vistas - Producto 3</h2>
+        <canvas id="grafico2"></canvas>
+    </div>          
+    
+</section>
+
+<script>
+    // Datos de ejemplo para el gráfico
+    var data = {
+        labels: ['OCTUBRE 2023', 'NOVIEMBRE 2023', 'DICIEMBRE 2023', 'ENERO 2024', 'FEBRERO 2024'],
+        datasets: [
+            {
+                label: 'VISTAS',
+                data: [1800, 1600, 4500, 800, 6500],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }
+        ]
+    };
+
+    // Configuración del gráfico
+    var options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+
+    // Crear el gráfico
+    var ctx = document.getElementById('grafico2').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+</script>     
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #quienes-somos {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perfil-fanatico.html">Perfil</a></li>
+                <li><a href="jugador.html">Jugador Favorito</a></li>
+                <li><a href="equipo.html">Equipo Favorito</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li> 
+                <li><a href="partidos.html">Partidos</a></li> 
+                <li><a href="tienda-fanatico.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="perfil">
+            <h2>Mi Perfil</h2>                  
+            <p><strong>Nombre:</strong> <span id="nombre-usuario"></span></p>
+            <p><strong>Equipo Favorito:</strong> <span> Universitario de Deportes</span></p>       
+            <p><strong>Jugador Favorito:</strong> <span> Jose Carvallo</span></p>  
+        </div>
+
+        <script>
+            // Obtener el nombre de usuario almacenado en localStorage
+            var username = localStorage.getItem("username");
+        
+            // Mostrar el nombre de usuario en la página
+            var nombreUsuarioElement = document.getElementById("nombre-usuario");
+            if (username) {
+                nombreUsuarioElement.textContent = username;
+            } else {
+                nombreUsuarioElement.textContent = "Nombre no especificado";
+            }
+        </script>
+        
+    </section>
+    
+</body>
+</html>

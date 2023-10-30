@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partidos de Fútbol</title>
+    <link rel="stylesheet" type="text/css" href="partidos.css">
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perfil-fanatico.html">Perfil</a></li>
+                <li><a href="jugador.html">Jugador Favorito</a></li>
+                <li><a href="equipo.html">Equipo Favorito</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li> 
+                <li><a href="partidos.html">Partidos</a></li> 
+                <li><a href="tienda-fanatico.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="posiciones.html">Tabla de Posiciones de Equipos</a></li>
+            <li><a href="goleadores.html">Goleadores</a></li>
+        </ul>
+    </nav>
+    
+    <ul id="lista-partidos">
+        <li class="partido">
+            <div class="cuadro-partido">
+                <h3>Deportivo Municipal vs. Deportivo Cantolao</h3>
+                <p>Fecha: Sábado 27</p>
+                <p>Hora: 3:15 PM</p>
+                <button onclick="mostrarAlineaciones('Deportivo Municipal', 'Deportivo Cantolao')">Mostrar Alineaciones</button>
+                <button onclick="ocultarAlineaciones('Deportivo Municipal', 'Deportivo Cantolao')">Ocultar Alineaciones</button>
+                <p>Resultado en Vivo: 2 - 1</p>
+                <div id="alineaciones-Deportivo Municipal-Deportivo Cantolao" class="alineaciones-container"></div> <!-- Contenedor para las alineaciones -->
+            </div>
+        </li>
+        <li class="partido">
+            <div class="cuadro-partido">
+                <h3>Universidad César Vallejo vs. Cusco Fútbol Club</h3>
+                <p>Fecha: Sábado 27</p>
+                <p>Hora: 3:15 PM</p>
+                <button onclick="mostrarAlineaciones('Universidad César Vallejo', 'Cusco Fútbol Club')">Mostrar Alineaciones</button>
+                <button onclick="ocultarAlineaciones('Universidad César Vallejo', 'Cusco Fútbol Club')">Ocultar Alineaciones</button>
+                <p>Resultado en Vivo: 0 - 0</p>
+                <div id="alineaciones-Universidad César Vallejo-Cusco Fútbol Club" class="alineaciones-container"></div> <!-- Contenedor para las alineaciones -->
+            </div>
+        </li>
+        <li class="partido">
+            <div class="cuadro-partido">
+                <h3>Sport Boys vs. Cienciano</h3>
+                <p>Fecha: Sábado 27</p>
+                <p>Hora: 3:15 PM</p>
+                <button onclick="mostrarAlineaciones('Sport Boys', 'Cienciano')">Mostrar Alineaciones</button>
+                <button onclick="ocultarAlineaciones('Sport Boys', 'Cienciano')">Ocultar Alineaciones</button>
+                <p>Resultado en Vivo: 1 - 0</p>
+                <div id="alineaciones-Sport Boys-Cienciano" class="alineaciones-container"></div> <!-- Contenedor para las alineaciones -->
+            </div>
+        </li>
+       
+    </ul>
+    
+    
+    
+    <div id="detalles-partido"></div>
+
+    
+    
+    <script src="partidos.js"></script>
+</body>
+</html>

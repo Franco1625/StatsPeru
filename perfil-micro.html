@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #quienes-somos {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio-micro.html">Inicio</a></li>
+                <li><a href="perfil-micro.html">Perfil</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="perfil">
+            <h2>Mi Perfil</h2>
+            <p>Nombre de usuario: <span id="displayUsername"></span></p>
+            <p>Nombre de la Empresa: <span id="displayName"></span></p>
+            <p>RUC: <span id="displayRuc"></span></p>
+            <p>Correo electrónico: <span id="displayEmail"></span></p>
+        </div>
+        
+        <script>
+            // Función para mostrar los datos del localStorage en el perfil
+            function mostrarDatosEnPerfil() {
+                var username = localStorage.getItem("username");
+                var name = localStorage.getItem("name");
+                var ruc = localStorage.getItem("ruc");
+                var email = localStorage.getItem("email");
+        
+                var displayUsername = document.getElementById("displayUsername");
+                var displayName = document.getElementById("displayName");
+                var displayRuc = document.getElementById("displayRuc");
+                var displayEmail = document.getElementById("displayEmail");
+        
+                if (username) {
+                    displayUsername.textContent = username;
+                }
+                if (name) {
+                    displayName.textContent = name;
+                }
+                if (ruc) {
+                    displayRuc.textContent = ruc;
+                }
+                if (email) {
+                    displayEmail.textContent = email;
+                }
+            }
+        
+            // Llamar a la función para mostrar los datos al cargar la página
+            mostrarDatosEnPerfil();
+        </script>
+        
+        
+    </section>
+    
+</body>
+</html>

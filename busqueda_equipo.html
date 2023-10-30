@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Búsqueda de equipos de Fútbol</title>
+    <link rel="stylesheet" type="text/css" href="busqueda_equipo.css">
+</head>
+<body>
+    <header>
+        <h1>StatsPeru</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perfil-fanatico.html">Perfil</a></li>
+                <li><a href="jugador.html">Jugador Favorito</a></li>
+                <li><a href="equipo.html">Equipo Favorito</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li> 
+                <li><a href="partidos.html">Partidos</a></li> 
+                <li><a href="tienda-fanatico.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Búsqueda de Equipos de Fútbol</h1>
+
+    <form id="searchForm">
+        <label for="searchInput">Buscar equipo:</label>
+        <input type="text" id="searchInput" name="searchInput" placeholder="Nombre del equipo">
+        <button type="button" onclick="buscarequipo()">Buscar</button>
+    </form>
+
+    <div id="resultado">
+     
+    </div>
+
+    <script>
+        function buscarequipo() {
+            const searchTerm = document.getElementById('searchInput').value;
+            const resultadoDiv = document.getElementById('resultado');
+
+          
+            const equipo = {
+                nombre: 'Club Universitario de Deportes',
+                apodo: 'La U - Los Cremas - Los Merengues - El Cuadro Estudiantil',
+                fundacion: '7 de agosto de 1924 (99 años)',
+                director: 'Manuel Barreto',
+                entrenador: 'Jorge Fossati',
+                estadio: 'Monumental',
+                capacidad: '80 093 espectadores',
+                imagen: 'u logo.png'           
+
+            };
+
+            // Mostrar la información del equipo
+            const mensajeResultado = `Resultados de búsqueda para "${searchTerm}":
+            <div class="equipo-info">
+              <img src="${equipo.imagen}" alt="${equipo.nombre}">
+              <p>Nombre: ${equipo.nombre}</p>
+              <p>Apodo: ${equipo.apodo}</p>
+              <p>Fundación: ${equipo.fundacion}</p>
+              <p>Director deportivo: ${equipo.director}</p>
+              <p>Entrenador: ${equipo.entrenador} años</p>
+              <p>Estadio: ${equipo.estadio}</p>
+              <p>Capacidad: ${equipo.capacidad}</p>
+            </div>`;
+
+
+            resultadoDiv.innerHTML = mensajeResultado;
+        }
+    </script>
+</body>
+</html>
